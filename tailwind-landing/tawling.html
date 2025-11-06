@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Assistant Pro - ваш профессиональный ИИ-ассистент для повышения продуктивности.">
+    <title>AI Assistant Pro - Ваш ИИ-Ассистент</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'header-bg': '#861c89', 
+                        'header-text': '#ffffff', 
+                        'accent-light': '#bba9e7',
+                        'accent-border': '#cd8ae6',
+                        'accent-dark': '#751b81',
+                        'accent-hover-bg': '#e5bef4', 
+                        'title-color': '#802790', 
+                        'btn-hover-text': '#fdfdfd', 
+                        'btn-hover-border': '#93238f', 
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-serif antialiased">
+    <nav class="bg-header-bg text-header-text shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-header-text">AI Assistant Pro</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="hover:text-blue-200 transition-colors">Преимущества</a>
+                    <a href="#about" class="hover:text-blue-200 transition-colors">О продукте</a>
+                    <a href="#cta" class="bg-header-text text-header-bg px-4 py-2 rounded-md font-semibold hover:bg-accent-hover-bg transition-colors">Попробовать бесплатно</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-header-text hover:text-gray-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 pt-2 space-y-2">
+                <a href="#features" class="block px-3 py-2 text-header-text hover:bg-blue-600 rounded-md">Преимущества</a>
+                <a href="#about" class="block px-3 py-2 text-header-text hover:bg-blue-600 rounded-md">О продукте</a>
+                <a href="#cta" class="block px-3 py-2 text-header-text bg-header-text text-header-bg rounded-md font-semibold hover:bg-accent-hover-bg">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-20 pb-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center min-h-screen">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-title-color mb-6 leading-tight">
+                        AI Assistant Pro
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Ваш интеллектуальный помощник на базе ИИ для повседневных задач.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#cta" class="bg-accent-light text-white px-8 py-3 rounded-lg font-semibold hover:bg-accent-dark transition-colors text-center border border-accent-border hover:border-accent-hover-border hover:text-btn-hover-text">Начать сейчас</a>
+                        <a href="#about" class="border-2 border-accent-border text-accent-light px-8 py-3 rounded-lg font-semibold hover:bg-accent-dark hover:text-accent-light transition-colors text-center">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="C:\Work_Institue\Лабораторный практикум 2 курс\lab4\images\a-2729794_1280.png" alt="AI Assistant Pro" class="w-full max-w-md rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">О продукте AI Assistant Pro</h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    AI Assistant Pro — это передовой инструмент на основе искусственного интеллекта, разработанный для автоматизации рутинных задач, анализа данных и повышения общей продуктивности. С помощью машинного обучения он адаптируется под ваши нужды, предоставляя персонализированные рекомендации и решения. Независимо от того, работаете ли вы в офисе, ведете бизнес или просто организуете повседневную жизнь, наш ассистент станет вашим надежным партнером. Интеграция с популярными сервисами позволяет seamlessly подключаться к вашим инструментам, делая работу проще и эффективнее.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Почему выбрать AI Assistant Pro?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Откройте новые горизонты с помощью передовых алгоритмов машинного обучения.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-accent-light bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-accent-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Сверхбыстрая обработка</h3>
+                    <p class="text-gray-600">Обработайте тысячи запросов за секунды. ИИ работает быстрее, чем вы думаете.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Безопасность данных</h3>
+                    <p class="text-gray-600">Ваши данные защищены шифрованием end-to-end. Полная конфиденциальность гарантирована.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Аналитика и insights</h3>
+                    <p class="text-gray-600">Получайте глубокие insights и рекомендации на основе ваших данных для оптимальных решений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Свяжитесь с нами</h2>
+            <p class="text-xl text-gray-600">Есть вопросы? Напишите нам!</p>
+        </div>
+        <form action="#" method="POST" class="space-y-6 bg-white p-8 rounded-lg shadow-xl">
+            <div>
+                <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Имя</label>
+                <input type="text" id="name" name="name" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-dark focus:border-transparent transition-colors"
+                       placeholder="Ваше имя">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-dark focus:border-transparent transition-colors"
+                       placeholder="borsemilia89@gmail.com">
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Сообщение</label>
+                <textarea id="message" name="message" rows="5" required
+                          class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent-dark focus:border-transparent transition-colors resize-none"
+                          placeholder="Расскажите о вашем проекте..."></textarea>
+            </div>
+            <div class="pt-4">
+                <button type="submit"
+                        class="w-full bg-accent-light text-white py-3 px-6 rounded-lg font-semibold hover:bg-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent-dark focus:ring-offset-2">
+                    Отправить сообщение
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <footer id="cta" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">AI Assistant Pro</h3>
+                    <p class="text-gray-400 mb-0">© 2025 AI Assistant Pro. Все права защищены.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">О продукте</a></li>
+                        <li><a href="#features" class="text-gray-400 hover:text-white transition-colors">Преимущества</a></li>
+                    </ul>
+                </div>
+                <div class="text-right md:text-left">
+                    <h4 class="font-semibold mb-4">Ссылки</h4>
+                    <div class="space-y-2">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Политика конфиденциальности</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Условия использования</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-6">
+            <div class="text-center">
+                <a href="#" class="bg-accent-light text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-dark transition-colors hover:text-btn-hover-text border border-accent-border hover:border-accent-hover-border">Попробовать бесплатно</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const button = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        button.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
